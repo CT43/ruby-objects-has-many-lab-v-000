@@ -14,11 +14,12 @@ class Song
   end
 
   def artist_name
-    binding.pry
+    #binding.pry
     if defined?(self.artist) != nil
       self.artist.name
     else
       return nil
+    end
   end
 
 end
