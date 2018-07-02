@@ -6,7 +6,12 @@ class Post
 
   def initialize(title)
     @title = title
-    @@all << title 
+    @@all << title
   end
+
+  def self.all
+    @@all
+  end
+  
 
 end
