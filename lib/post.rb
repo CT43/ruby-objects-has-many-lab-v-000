@@ -13,5 +13,13 @@ class Post
     @@all
   end
 
+  def author_name 
+    if defined?(self.author.name) != nil 
+      self.author.name 
+    else
+      return nil 
+    end 
+  end
+
 
 end
