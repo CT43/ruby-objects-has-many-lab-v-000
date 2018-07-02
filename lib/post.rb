@@ -1,6 +1,6 @@
 
 class Post
-  attr_accessor :title :author
+  attr_accessor :title, :author
 
   @@all = []
 
@@ -13,12 +13,12 @@ class Post
     @@all
   end
 
-  def author_name 
-    if defined?(self.author.name) != nil 
-      self.author.name 
+  def author_name
+    if defined?(self.author.name) != nil
+      self.author.name
     else
-      return nil 
-    end 
+      return nil
+    end
   end
 
 
