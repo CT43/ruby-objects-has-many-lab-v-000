@@ -15,7 +15,10 @@ class Song
 
   def artist_name
     binding.pry
-    self.artist.defined?
+    if defined?(self.artist) != nil
+      self.artist.name
+    else
+      return nil
   end
 
 end
